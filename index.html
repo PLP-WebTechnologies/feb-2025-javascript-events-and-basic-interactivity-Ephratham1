@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Bundle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Interactive Web Page</h1>
+
+  <!-- Event Handling -->
+  <button id="clickBtn" class="change-btn">Click Me</button>
+  <p id="hoverText">Hover over me!</p>
+  <input type="text" placeholder="Press a key..." id="keyInput">
+
+  <p id="secret">🎉 You discovered the secret!</p>
+
+  <!-- Interactive Elements -->
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://via.placeholder.com/200?text=1" class="active">
+    <img src="https://via.placeholder.com/200?text=2">
+    <img src="https://via.placeholder.com/200?text=3">
+  </div>
+  <button id="prevBtn">Previous</button>
+  <button id="nextBtn">Next</button>
+
+  <h2>Tabs</h2>
+  <div class="tabs">
+    <div class="tab" data-index="0">Tab 1</div>
+    <div class="tab" data-index="1">Tab 2</div>
+  </div>
+  <div class="tab-content active">This is tab 1 content.</div>
+  <div class="tab-content">This is tab 2 content.</div>
+
+  <!-- Form Validation -->
+  <h2>Sign Up</h2>
+  <form id="form">
+    <input type="text" id="email" placeholder="Email" required>
+    <div id="emailFeedback" class="feedback"></div>
+    
+    <input type="password" id="password" placeholder="Password" required>
+    <div id="passFeedback" class="feedback"></div>
+    
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

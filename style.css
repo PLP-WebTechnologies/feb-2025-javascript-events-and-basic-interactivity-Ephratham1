@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  button, input {
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .change-btn {
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .change-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .gallery img {
+    display: none;
+    width: 200px;
+    height: auto;
+  }
+  
+  .gallery img.active {
+    display: block;
+    animation: fade 0.5s ease-in-out;
+  }
+  
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .tabs {
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .tab {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .tab-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  .feedback {
+    font-size: 0.9em;
+    color: red;
+  }
+  
+  .valid {
+    color: green;
+  }
+  
+  #secret {
+    display: none;
+    color: purple;
+  }
+  
